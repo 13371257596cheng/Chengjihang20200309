@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f00"
+    tools:context=".activity.MainActivity">
+    //页头
+    <include layout="@layout/item1"
+        android:id="@+id/inc"></include>
+    //中间
+    <LinearLayout
+        android:layout_below="@+id/inc"
+        android:layout_margin="20dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
+        //手机号
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="#111111"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:text="手机号:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_marginLeft="40dp"
+                android:layout_width="500dp"
+                android:layout_height="50dp" />
+
+        </LinearLayout>
+        //密码
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="#111111"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:text="密码:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/et_pwd"
+                android:layout_marginLeft="40dp"
+                android:layout_width="500dp"
+                android:layout_height="50dp" />
+
+        </LinearLayout>
+        //记住
+        <LinearLayout
+            android:layout_marginLeft="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:text="记住账号"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="300dp"
+                android:textColor="#2196F3"
+                android:text="忘记密码?"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        //登录
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+           <Button
+               android:id="@+id/btn_zc"
+               android:text="注册"
+               android:background="#03A9F4"
+               android:layout_marginLeft="50dp"
+               android:layout_width="150dp"
+               android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/btn_dl"
+                android:layout_marginLeft="180dp"
+                android:text="登录"
+                android:background="#8BC34A"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    //底纹
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:textColor="#0C0C0C"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="八维集团"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="#0C0C0C"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="copyright@2019~2020"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

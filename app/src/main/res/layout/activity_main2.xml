@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.Main2Activity">
+    <include layout="@layout/item1"></include>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="#f00"
+        android:layout_height="@dimen/dp150">
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@mipmap/tu"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+        <TextView
+            android:textSize="@dimen/dp20"
+            android:textColor="#F7F0F0"
+            android:text="13371257596"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:layout_marginLeft="@dimen/dp20"
+        android:textColor="#090808"
+        android:text="2019年购物消费情况统计"
+        android:textSize="@dimen/dp20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+
+</LinearLayout>
